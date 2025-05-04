@@ -1,0 +1,522 @@
+Message-ID: <1847691263.1.1746182516271@4caa664aba0d>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_0_514361232.1746182516248"
+
+------=_Part_0_514361232.1746182516248
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Database Design</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Database Design</h1>
+    <div class=3D"Section1">
+        <h3 id=3D"DatabaseDesign-MongoDBCollections">MongoDB Collections</h=
+3>
+<h4 id=3D"DatabaseDesign-BooksCollection"><strong>Books Collection</strong>=
+</h4>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "books": [
+    {
+      "_id": "ObjectId",  // MongoDB's unique identifier
+      "author": "string",
+      "category": "string",
+      "cover": "string",
+      "name": "string",
+      "price": "number",
+      "rating": "number",
+      "description": "string"
+    }
+  ]
+}
+</pre>
+</div>
+</div>
+<h4 id=3D"DatabaseDesign-Explanations:">Explanations:</h4>
+<ul>
+<li>
+<p><strong>_id</strong>: Unique identifier for each book document.</p></li>
+<li>
+<p><strong>author</strong>: Name of the book's author.</p></li>
+<li>
+<p><strong>category</strong>: Genre or classification of the book.</p></li>
+<li>
+<p><strong>cover</strong>: URL to the book's cover image.</p></li>
+<li>
+<p><strong>name</strong>: Title of the book.</p></li>
+<li>
+<p><strong>price</strong>: Cost of the book.</p></li>
+<li>
+<p><strong>rating</strong>: Average user rating of the book.</p></li>
+<li>
+<p><strong>description</strong>: Summary or overview of the book's content.=
+</p></li>
+</ul>
+<h4 id=3D"DatabaseDesign-Indexes:"><strong>Indexes</strong>:</h4>
+<p>Create an index on <code>category</code> to allow efficient querying by =
+category.</p>
+<h4 id=3D"DatabaseDesign-OrdersCollection">Orders Collection</h4>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "orders": [
+    {
+      "_id": "ObjectId",
+      "userId": "string",
+      "orderId": "string",
+      "orderDate": "ISODate",
+      "books": [
+        {
+          "bookId": "string",
+          "price": "number",
+          "quantity": "number"
+        }
+      ]
+    }
+  ]
+}
+</pre>
+</div>
+</div>
+<h4 id=3D"DatabaseDesign-Explanations:.1">Explanations:</h4>
+<ul>
+<li>
+<p><strong>_id</strong>: Unique identifier for each order document.</p></li=
+>
+<li>
+<p><strong>userId</strong>: ID of the customer who placed the order.</p></l=
+i>
+<li>
+<p><strong>orderId</strong>: Unique identifier for the order.</p></li>
+<li>
+<p><strong>orderDate</strong>: Date when the order was placed.</p></li>
+<li>
+<p><strong>books</strong>: List of books included in the order.</p>
+<ul>
+<li>
+<p><strong>bookId</strong>: This field stores the ID of the book</p></li>
+<li>
+<p><strong>price</strong>: Cost of the book.</p></li>
+<li>
+<p><strong>quantity</strong>: number copies of the book</p></li>
+</ul></li>
+</ul>
+<h4 id=3D"DatabaseDesign-Indexes:.1"><strong>Indexes</strong>:</h4>
+<p>Create an index on <code>userId</code> to quickly retrieve orders for a =
+specific customer.</p>
+<h4 id=3D"DatabaseDesign-CartCollection">Cart Collection</h4>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "carts": [
+    {
+      "_id": "ObjectId",
+      "userId": "string",
+      "books": [
+        {
+          "bookId": "string",
+          "price": "number",
+          "quantity": "number"
+        }
+      ]
+    }
+  ]
+}
+</pre>
+</div>
+</div>
+<h4 id=3D"DatabaseDesign-Explanation:"><strong>Explanation</strong>:</h4>
+<ul>
+<li>
+<p><strong>_id</strong>: Unique identifier for each order document.</p></li=
+>
+<li>
+<p><strong>userId</strong>: ID of the customer who placed the order.</p></l=
+i>
+<li>
+<p><strong>books</strong>: List of books included in the order.</p>
+<ul>
+<li>
+<p><strong>bookId</strong>: This field stores the ID of the book</p></li>
+<li>
+<p><strong>price</strong>: Cost of the book.</p></li>
+<li>
+<p><strong>quantity</strong>: number copies of the book</p></li>
+</ul></li>
+</ul>
+<h4 id=3D"DatabaseDesign-Indexes:.2"><strong>Indexes</strong>:</h4>
+<p>Create an index on <code>userId</code> for efficient access to a user's =
+cart.</p>
+<h4 id=3D"DatabaseDesign-BestSellersCollection">BestSellers Collection</h4>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "bestSellers": [
+    {
+      "_id": "ObjectId",
+      "bookId": "string",
+      "copiesSold": "number" // The number of copies sold
+    }
+  ]
+}
+</pre>
+</div>
+</div>
+<h4 id=3D"DatabaseDesign-Explanation:.1">Explanation:</h4>
+<ul>
+<li>
+<p><strong>_id</strong>: This is the unique identifier for each document in=
+ the collection.</p></li>
+<li>
+<p><strong>bookId</strong>: This field stores the ID of the book. It identi=
+fies which book is a best-seller.</p></li>
+<li>
+<p><strong>copiesSold</strong>: This field tracks the total number of copie=
+s sold for the book. This information is crucial for determining best-selle=
+r status and can help in making inventory and marketing decisions.</p></li>
+</ul>
+<h4 id=3D"DatabaseDesign-Indexes:.3"><strong>Indexes</strong>:</h4>
+<p>An index on <code>bookId</code> can be useful for querying best-selling =
+books.</p>
+<h4 id=3D"DatabaseDesign-RecommendationsCollection">Recommendations Collect=
+ion</h4>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "recommendations": [
+    {
+      "_id": "ObjectId",
+      "bookId": "string",
+      "friendsPurchased": ["string"],
+      "purchases": "number"
+    }
+  ]
+}
+</pre>
+</div>
+</div>
+<h4 id=3D"DatabaseDesign-Explanations:.2">Explanations:</h4>
+<ul>
+<li>
+<p><strong>_id</strong>: Unique identifier for each recommendation document=
+.</p></li>
+<li>
+<p><strong>bookId</strong>: ID of the recommended book.</p></li>
+<li>
+<p><strong>friendsPurchased</strong>: List of userId who bought the book.</=
+p></li>
+<li>
+<p><strong>purchases</strong>: total number of times the book was purchased=
+ by those friends. .</p></li>
+</ul>
+<h4 id=3D"DatabaseDesign-Indexes:.4"><strong>Indexes</strong>:</h4>
+<p>Create an index on <code>bookId</code> to efficiently retrieve recommend=
+ations for a specific book.</p>
+<h4 id=3D"DatabaseDesign-UsersCollection">Users Collection</h4>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "users": [
+    {
+      "_id": "ObjectId",
+      "userId": "string",
+      "email": "string",
+      "passwordHash": "string",
+      "createdAt": "ISODate"
+    }
+  ]
+}
+</pre>
+</div>
+</div>
+<h4 id=3D"DatabaseDesign-Explanations:.3">Explanations:</h4>
+<ul>
+<li>
+<p><strong>_id</strong>: Unique identifier for each user document.</p></li>
+<li>
+<p><strong>userId</strong>: Unique ID for the user.</p></li>
+<li>
+<p><strong>email</strong>: User's email address.</p></li>
+<li>
+<p><strong>passwordHash</strong>: Securely hashed password.</p></li>
+<li>
+<p><strong>createdAt</strong>: Date the user account was created.</p></li>
+</ul>
+<h4 id=3D"DatabaseDesign-Indexes:.5"><strong>Indexes</strong>:</h4>
+<p>Create unique indexes on <code>email</code> and <code>userId</code> to e=
+nsure uniqueness and fast lookups.</p>
+<h4 id=3D"DatabaseDesign-FriendsCollection">Friends Collection</h4>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "friends": [
+    {
+      "_id": "ObjectId",  // MongoDB's unique identifier
+      "userId": "string",  // The ID of the user
+      "friends": [
+        {
+          "userId": "string",  // The ID of the friend
+          "since": "ISODate"     // Date when they became friends
+        }
+      ]
+    }
+  ]
+}
+</pre>
+</div>
+</div>
+<h4 id=3D"DatabaseDesign-Explanation:.2">Explanation:</h4>
+<ul>
+<li>
+<p><strong>_id</strong>: This is the unique identifier for each document in=
+ the collection.</p></li>
+<li>
+<p><strong>userId</strong>: This field stores the ID of the user.</p></li>
+<li>
+<p><strong>friends</strong>: This is an array of embedded documents, each r=
+epresenting a friendship.</p>
+<ul>
+<li>
+<p><strong>userId</strong>: The ID of the friend.</p></li>
+<li>
+<p><strong>since</strong>: The date when the friendship was established. Th=
+is can be useful for tracking the duration of friendships.</p></li>
+</ul></li>
+</ul>
+<h4 id=3D"DatabaseDesign-Indexes:.6">Indexes:</h4>
+<ul>
+<li>
+<p><strong>Index on </strong><code>userId</code>: Create an index on the <c=
+ode>userId</code> field to efficiently query a user's friends.</p></li>
+</ul>
+    </div>
+</body>
+</html>
+------=_Part_0_514361232.1746182516248--

@@ -1,0 +1,643 @@
+Message-ID: <5337305.7.1746182469139@2be194da1946>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_6_1398761774.1746182469138"
+
+------=_Part_6_1398761774.1746182469138
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>API Specs</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>API Specs</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"APISpecs-APISpecification">API Specification</h2>
+<h3 id=3D"APISpecs-BooksAPI">Books API</h3>
+<h4 id=3D"APISpecs-GET/books">GET /books</h4>
+<ul>
+<li>
+<p><strong>Description</strong>: Retrieves a list of books, optionally filt=
+ered by category.</p></li>
+<li>
+<p><strong>Request</strong>:</p>
+<ul>
+<li>
+<p>Query Parameters:</p>
+<ul>
+<li>
+<p><code>category</code> (optional, string): Category to filter books by.</=
+p></li>
+</ul></li>
+</ul></li>
+<li>
+<p><strong>Response</strong>:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "books": [
+    {
+      "id": "string",
+      "category": "string",
+      "name": "string",
+      "author": "string",
+      "description": "string",
+      "rating": "number",
+      "price": "number",
+      "cover": "string"
+    }
+  ]
+}
+</pre>
+</div>
+</div></li>
+</ul>
+<h4 id=3D"APISpecs-GET/books/{:id}">GET /books/{:id}</h4>
+<ul>
+<li>
+<p><strong>Description</strong>: Retrieves details of a specific book by ID=
+.</p></li>
+<li>
+<p><strong>Request</strong>:</p>
+<ul>
+<li>
+<p>Path Parameters:</p>
+<ul>
+<li>
+<p><code>id</code> (string): ID of the book.</p></li>
+</ul></li>
+</ul></li>
+<li>
+<p><strong>Response</strong>:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "id": "string",
+  "category": "string",
+  "name": "string",
+  "author": "string",
+  "description": "string",
+  "rating": "number",
+  "price": "number",
+  "cover": "string"
+}
+</pre>
+</div>
+</div></li>
+</ul>
+<h3 id=3D"APISpecs-CartAPI">Cart API</h3>
+<h4 id=3D"APISpecs-GET/cart">GET /cart</h4>
+<ul>
+<li>
+<p><strong>Description</strong>: Lists items in a user's cart.</p></li>
+<li>
+<p><strong>Request</strong>: None</p></li>
+<li>
+<p><strong>Response</strong>:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "orders": [
+    {
+      "customerId": "string",
+      "bookId": "string",
+      "quantity": "number",
+      "price": "number"
+    }
+  ]
+}
+</pre>
+</div>
+</div></li>
+</ul>
+<h4 id=3D"APISpecs-POST/cart">POST /cart</h4>
+<ul>
+<li>
+<p><strong>Description</strong>: Adds a specified book to the user's cart.<=
+/p></li>
+<li>
+<p><strong>Request</strong>:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "bookId": "string",
+  "quantity": "number",
+  "price": "number"
+}
+</pre>
+</div>
+</div></li>
+<li>
+<p><strong>Response</strong>: Empty</p></li>
+</ul>
+<h4 id=3D"APISpecs-PUT/cart">PUT /cart</h4>
+<ul>
+<li>
+<p><strong>Description</strong>: Updates the user's cart with a new quantit=
+y for a specified book.</p></li>
+<li>
+<p><strong>Request</strong>:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "bookId": "string",
+  "quantity": "number"
+}
+</pre>
+</div>
+</div></li>
+<li>
+<p><strong>Response</strong>: Empty</p></li>
+</ul>
+<h4 id=3D"APISpecs-DELETE/cart">DELETE /cart</h4>
+<ul>
+<li>
+<p><strong>Description</strong>: Removes a specified book from the user's c=
+art.</p></li>
+<li>
+<p><strong>Request</strong>:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "bookId": "string"
+}
+</pre>
+</div>
+</div></li>
+<li>
+<p><strong>Response</strong>: Empty</p></li>
+</ul>
+<h4 id=3D"APISpecs-GET/cart/{:bookId}">GET /cart/{:bookId}</h4>
+<ul>
+<li>
+<p><strong>Description</strong>: Retrieves details of a specific item in th=
+e user's cart.</p></li>
+<li>
+<p><strong>Request</strong>:</p>
+<ul>
+<li>
+<p>Path Parameters:</p>
+<ul>
+<li>
+<p><code>bookId</code> (string): ID of the book in the cart.</p></li>
+</ul></li>
+</ul></li>
+<li>
+<p><strong>Response</strong>:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "customerId": "string",
+  "bookId": "string",
+  "quantity": "number",
+  "price": "number"
+}
+</pre>
+</div>
+</div></li>
+</ul>
+<h3 id=3D"APISpecs-OrdersAPI">Orders API</h3>
+<h4 id=3D"APISpecs-GET/orders">GET /orders</h4>
+<ul>
+<li>
+<p><strong>Description</strong>: Lists orders for a user.</p></li>
+<li>
+<p><strong>Request</strong>: None</p></li>
+<li>
+<p><strong>Response</strong>:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "customerId": "string",
+  "orderId": "string",
+  "orderDate": "string",
+  "books": [
+    {
+      "bookId": "string",
+      "price": "number",
+      "quantity": "number"
+    }
+  ]
+}
+</pre>
+</div>
+</div></li>
+</ul>
+<h4 id=3D"APISpecs-POST/orders">POST /orders</h4>
+<ul>
+<li>
+<p><strong>Description</strong>: Moves the contents of a user's cart into t=
+he checkout flow.</p></li>
+<li>
+<p><strong>Request</strong>:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "books": [
+    {
+      "bookId": "string",
+      "price": "number",
+      "quantity": "number"
+    }
+  ]
+}
+</pre>
+</div>
+</div></li>
+<li>
+<p><strong>Response</strong>: Empty</p></li>
+</ul>
+<h3 id=3D"APISpecs-BestSellersAPI">Best Sellers API</h3>
+<h4 id=3D"APISpecs-GET/bestsellers">GET /bestsellers</h4>
+<ul>
+<li>
+<p><strong>Description</strong>: Retrieves a list of best-selling books.</p=
+></li>
+<li>
+<p><strong>Request</strong>: None</p></li>
+<li>
+<p><strong>Response</strong>:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "bookIds": ["string"]
+}
+</pre>
+</div>
+</div></li>
+</ul>
+<h3 id=3D"APISpecs-RecommendationsAPI">Recommendations API</h3>
+<h4 id=3D"APISpecs-GET/recommendations">GET /recommendations</h4>
+<ul>
+<li>
+<p><strong>Description</strong>: Retrieves a list of recommended books base=
+d on the user's friends' purchase history.</p></li>
+<li>
+<p><strong>Request</strong>: None</p></li>
+<li>
+<p><strong>Response</strong>:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "recommendations": [
+    {
+      "bookId": "string",
+      "friendsPurchased": ["string"],
+      "purchases": "number"
+    }
+  ]
+}
+</pre>
+</div>
+</div></li>
+</ul>
+<h4 id=3D"APISpecs-GET/recommendations/{bookId}">GET /recommendations/{book=
+Id}</h4>
+<ul>
+<li>
+<p><strong>Description</strong>: Retrieves recommendations by a specific bo=
+ok.</p></li>
+<li>
+<p><strong>Request</strong>:</p>
+<ul>
+<li>
+<p>Path Parameters:</p>
+<ul>
+<li>
+<p><code>bookId</code> (string): ID of the book.</p></li>
+</ul></li>
+</ul></li>
+<li>
+<p><strong>Response</strong>:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "friendsPurchased": ["string"],
+  "purchased": "number"
+}
+</pre>
+</div>
+</div></li>
+</ul>
+<h3 id=3D"APISpecs-SearchAPI">Search API</h3>
+<h4 id=3D"APISpecs-GET/search">GET /search</h4>
+<ul>
+<li>
+<p><strong>Description</strong>: Searches for books based on provided searc=
+h parameters.</p></li>
+<li>
+<p><strong>Request</strong>: Varies based on search parameters.</p></li>
+<li>
+<p><strong>Response</strong>: Varies based on search results.</p></li>
+</ul>
+<h3 id=3D"APISpecs-UserAPI">User API</h3>
+<h4 id=3D"APISpecs-POST/api/users/register">POST /api/users/register</h4>
+<ul>
+<li>
+<p><strong>Description</strong>: Register a new user.</p></li>
+<li>
+<p><strong>Request Body</strong>:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "email": "string",
+  "password": "string"
+}
+</pre>
+</div>
+</div></li>
+<li>
+<p><strong>Response</strong>:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "message": "User registered successfully",
+  "userId": "string"
+}
+</pre>
+</div>
+</div></li>
+</ul>
+<h4 id=3D"APISpecs-POST/api/users/login">POST /api/users/login</h4>
+<ul>
+<li>
+<p><strong>Description</strong>: Authenticate a user and return a token.</p=
+></li>
+<li>
+<p><strong>Request Body</strong>:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "email": "string",
+  "password": "string"
+}
+</pre>
+</div>
+</div></li>
+<li>
+<p><strong>Response</strong>:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "token": "string",
+  "userId": "string"
+}
+</pre>
+</div>
+</div></li>
+</ul>
+<h4 id=3D"APISpecs-GET/api/users/profile">GET /api/users/profile</h4>
+<ul>
+<li>
+<p><strong>Description</strong>: Retrieve user profile information.</p></li=
+>
+<li>
+<p><strong>Response</strong>:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "userId": "string",
+  "email": "string",
+  "createdAt": "string"
+}</pre>
+</div>
+</div></li>
+</ul>
+    </div>
+</body>
+</html>
+------=_Part_6_1398761774.1746182469138--

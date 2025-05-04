@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/lw11407/workspace/genius_ai/bookstore/logs/.a86d4cd58d6f5ad0e56aaa2a9b6a3bfe28f0448f-audit.json",
+    "files": [
+        {
+            "date": 1746363504795,
+            "name": "/Users/lw11407/workspace/genius_ai/bookstore/logs/application-2025-05-04.log",
+            "hash": "f0c3efe249bd9522374f52fb2fb3beb7cdefa2fe916feb4fc82a38c6d7d19c6f"
+        }
+    ],
+    "hashType": "sha256"
+}

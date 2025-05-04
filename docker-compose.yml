@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongodb/mongodb-community-server
+    container_name: bookstore-mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    environment:
+      - MONGO_INITDB_DATABASE=bookstore
+    networks:
+      - bookstore-network
+
+  app:
+    build: .
+    container_name: bookstore-app
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - MONGODB_URI=mongodb://mongodb:27017/bookstore
+      - JWT_SECRET=your_jwt_secret_key
+      - EMAIL_SERVICE=gmail
+      - EMAIL_USER=geniusai854@gmail.com
+      - EMAIL_PASS=exffnvlyebdcfqbd
+      - VERIFICATION_CODE_EXPIRY=3600
+      - NODE_ENV=production
+    volumes:
+      - app_logs:/app/logs
+    depends_on:
+      - mongodb
+    networks:
+      - bookstore-network
+
+volumes:
+  mongodb_data:
+    name: bookstore-mongodb-data
+  app_logs:
+    name: bookstore-app-logs
+
+networks:
+  bookstore-network:
+    name: bookstore-network 
